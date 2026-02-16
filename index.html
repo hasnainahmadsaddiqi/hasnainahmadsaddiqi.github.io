@@ -7,53 +7,46 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 
 <style>
-body {
-  background: #f4f6f9;
-}
+body { background:#f4f6f9; }
 
-.hero {
-  padding: 4rem 0;
-}
+.hero { padding:4rem 0; }
 
 .profile-img {
-  width: 220px;
-  border-radius: 50%;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  width:220px;
+  border-radius:50%;
+  box-shadow:0 15px 40px rgba(0,0,0,0.2);
 }
 
-.section-img {
-  border-radius: 12px;
-  margin-top: 1rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-.social-buttons a {
-  margin: 0.4rem;
-}
-
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
-.cert-card {
-  padding: 1rem;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-
-.cert-card:hover {
-  transform: translateY(-5px);
+.section-box {
+  background:white;
+  padding:2rem;
+  border-radius:12px;
+  margin-bottom:2rem;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
 .counter {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #0a3d62;
+  font-size:2rem;
+  font-weight:bold;
+  color:#0a3d62;
 }
+
+.cert-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1.5rem;
+}
+
+.cert-card {
+  padding:1rem;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+.cert-card:hover { transform:translateY(-5px); }
+
+.social-buttons a { margin:0.4rem; }
 </style>
 </head>
 
@@ -73,25 +66,25 @@ body {
 
 <main class="container">
 
+<!-- HERO -->
 <div class="grid hero">
 <section>
 <hgroup>
 <h2>Hasnain Ahmad Saddiqi</h2>
-<h3>Chemical Engineer | AI for Process Systems | LNG Decarbonization</h3>
+<h3>Chemical Engineer | AI for Process Systems | LNG Decarbonization Researcher</h3>
 </hgroup>
 
 <p>
 Research Assistant at Sustainable Energy Research Center (Sultan Qaboos University, Oman).
-Specializing in AI-driven process optimization, hydrogen systems, and sustainable energy transitions.
+Specializing in AI-driven optimization, hydrogen systems, membrane separations, and LNG decarbonization.
 </p>
 
 <div class="social-buttons">
 <a href="https://www.linkedin.com/in/hasnainahmadsiddiqi/" target="_blank" role="button">LinkedIn</a>
 <a href="https://orcid.org/0009-0009-3021-0555" target="_blank" role="button">ORCID</a>
 <a href="https://scholar.google.com/citations?user=zNNYxoAAAAAJ&hl=en" target="_blank" role="button">Google Scholar</a>
-<a href="https://www.researchgate.net/profile/Hasnain-Saddiqi?ev=hdr_xprf" target="_blank" role="button">ResearchGate</a>
+<a href="https://www.researchgate.net/profile/Hasnain-Saddiqi" target="_blank" role="button">ResearchGate</a>
 </div>
-
 </section>
 
 <section>
@@ -101,31 +94,26 @@ Specializing in AI-driven process optimization, hydrogen systems, and sustainabl
 
 <hr>
 
-<section>
-<h2>Research Impact</h2>
-<div class="grid">
-<div>
-<p class="counter">6+</p>
-<p>Peer Reviewed Publications</p>
-</div>
-<div>
-<p class="counter">3</p>
-<p>First Author Q1 Papers</p>
-</div>
-<div>
-<p class="counter">20+</p>
-<p>Professional Certifications</p>
-</div>
-</div>
+<!-- RESEARCH AREAS -->
+<section id="research" class="section-box">
+<h2>Research Areas & Interests</h2>
+<ul>
+<li>Artificial Intelligence in Process Systems Engineering</li>
+<li>LNG Decarbonization & Energy Optimization</li>
+<li>Hydrogen Production & Infrastructure Modeling</li>
+<li>Membrane-Based Separation Technologies</li>
+<li>Process Simulation (Aspen HYSYS)</li>
+<li>Machine Learning for Industrial Emissions Benchmarking</li>
+<li>Techno-Economic & Exergy Analysis</li>
+</ul>
 </section>
 
-<hr>
-
-<section id="publications">
+<!-- PUBLICATIONS -->
+<section id="publications" class="section-box">
 <h2>Publications</h2>
 
 <article>
-<h3>Optimization and Predictive Modeling of Membrane Based Produced Water Treatment</h3>
+<h4>Optimization and Predictive Modeling of Membrane Based Produced Water Treatment</h4>
 <p><strong>Journal:</strong> Chemical Engineering Research and Design (Elsevier)</p>
 <p><strong>Impact Factor:</strong> 4.11</p>
 <p><strong>Published:</strong> May 2024</p>
@@ -133,56 +121,98 @@ Specializing in AI-driven process optimization, hydrogen systems, and sustainabl
 </article>
 
 <article>
-<h3>Modelling and Predicting Lift Force and Trans-Membrane Pressure</h3>
+<h4>Modelling and Predicting Lift Force and Trans-Membrane Pressure</h4>
 <p><strong>Journal:</strong> Journal of Water Process Engineering</p>
 <p><strong>Impact Factor:</strong> 7.0</p>
 <p><strong>Published:</strong> Aug 2024</p>
 <p><strong>DOI:</strong> <a href="https://doi.org/10.1016/j.jwpe.2024.106014" target="_blank">10.1016/j.jwpe.2024.106014</a></p>
 </article>
 
-<!-- Add remaining papers same structure -->
+<article>
+<h4>Optimization Based Comparative Study of ML Methods for Hydrogen Production</h4>
+<p><strong>Journal:</strong> International Journal of Energy Research</p>
+<p><strong>Impact Factor:</strong> 4.3</p>
+<p><strong>Published:</strong> July 2025</p>
+<p><strong>DOI:</strong> <a href="https://doi.org/10.1155/er/8940534" target="_blank">10.1155/er/8940534</a></p>
+</article>
+
+<article>
+<h4>Optimizing Propane–Propylene Separation via Aspen Plus & ML</h4>
+<p><strong>Journal:</strong> Separation Science and Technology</p>
+<p><strong>Impact Factor:</strong> 2.3</p>
+<p><strong>Published:</strong> Dec 2025</p>
+<p><strong>DOI:</strong> <a href="https://doi.org/10.1080/01496395.2025.2608834" target="_blank">10.1080/01496395.2025.2608834</a></p>
+</article>
+
+<article>
+<h4>Predictive Modeling of Emulsion Stability Using Machine Learning</h4>
+<p><strong>Journal:</strong> Food and Bioproducts Processing</p>
+<p><strong>Impact Factor:</strong> 3.5</p>
+<p><strong>Published:</strong> Nov 2024</p>
+<p><strong>DOI:</strong> <a href="https://doi.org/10.1016/j.fbp.2024.11.019" target="_blank">10.1016/j.fbp.2024.11.019</a></p>
+</article>
+
+<article>
+<h4>Mortar Performance Enhancement Using Hybrid Biochar & ML</h4>
+<p><strong>Journal:</strong> Materials Chemistry and Physics: Sustainability and Energy</p>
+<p><strong>Impact Factor:</strong> 4.3</p>
+<p><strong>Published:</strong> May 2025</p>
+<p><strong>DOI:</strong> <a href="https://doi.org/10.1016/j.macse.2025.100024" target="_blank">10.1016/j.macse.2025.100024</a></p>
+</article>
 
 </section>
 
-<hr>
+<!-- EDUCATION -->
+<section class="section-box">
+<h2>Education</h2>
+<p><strong>B.Sc. Chemical Engineering</strong><br>
+University of Engineering & Technology, Peshawar<br>
+2019 – 2023 | CGPA: 3.13/4.00</p>
+</section>
 
-<section id="certificates">
+<!-- PROFESSIONAL MEMBERSHIPS -->
+<section class="section-box">
+<h2>Professional Memberships</h2>
+<ul>
+<li>Pakistan Engineering Council (Registered Engineer) – CHEM/023016</li>
+<li>American Institute of Chemical Engineers (Graduate Student Member)</li>
+</ul>
+</section>
+
+<!-- PEER REVIEWER -->
+<section class="section-box">
+<h2>Peer Reviewer</h2>
+<p>Reviewer for international peer-reviewed journals in Chemical Engineering, Energy Systems, and Sustainable Process Engineering.</p>
+</section>
+
+<!-- LECTURES & WEBINARS -->
+<section class="section-box">
+<h2>Lectures & Webinars</h2>
+<ul>
+<li>Guest Lecture: Machine Learning in Process Engineering – UET Peshawar</li>
+<li>Webinar: AI-Driven LNG Decarbonization Strategies</li>
+<li>Workshop Speaker: Aspen HYSYS & Process Simulation</li>
+</ul>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section-box">
 <h2>Certifications</h2>
-
 <div class="cert-grid">
-
-<div class="cert-card">
-<h4>Machine Learning – Stanford University</h4>
-<p>Year: 2023</p>
-<a href="#" role="button">View Certificate</a>
-</div>
-
-<div class="cert-card">
-<h4>Google Data Analytics Professional</h4>
-<p>Year: 2023</p>
-<a href="#" role="button">View Certificate</a>
-</div>
-
-<div class="cert-card">
-<h4>Power BI Data Analyst – Microsoft</h4>
-<p>Year: 2024</p>
-<a href="#" role="button">View Certificate</a>
-</div>
-
-<!-- You will duplicate this card for each certificate -->
-
+<div class="cert-card"><h4>Machine Learning – Stanford</h4><a href="#">View</a></div>
+<div class="cert-card"><h4>Deep Learning – Stanford</h4><a href="#">View</a></div>
+<div class="cert-card"><h4>Google Data Analytics</h4><a href="#">View</a></div>
+<div class="cert-card"><h4>IBM Data Analyst</h4><a href="#">View</a></div>
+<div class="cert-card"><h4>Power BI – Microsoft</h4><a href="#">View</a></div>
 </div>
 </section>
 
-<hr>
-
-<section id="contact">
+<!-- CONTACT -->
+<section id="contact" class="section-box">
 <h2>Contact</h2>
-
-<p><strong>Email 1:</strong> <a href="mailto:hasnainahmadsaddiqui@gmail.com">hasnainahmadsaddiqui@gmail.com</a></p>
-<p><strong>Email 2:</strong> <a href="mailto:h.saddiqi@squ.edu.om">h.saddiqi@squ.edu.om</a></p>
-<p><strong>Email 3:</strong> <a href="mailto:19pwche1385@uetpeshawar.edu.pk">19pwche1385@uetpeshawar.edu.pk</a></p>
-
+<p><a href="mailto:hasnainahmadsaddiqui@gmail.com">hasnainahmadsaddiqui@gmail.com</a></p>
+<p><a href="mailto:h.saddiqi@squ.edu.om">h.saddiqi@squ.edu.om</a></p>
+<p><a href="mailto:19pwche1385@uetpeshawar.edu.pk">19pwche1385@uetpeshawar.edu.pk</a></p>
 </section>
 
 </main>
